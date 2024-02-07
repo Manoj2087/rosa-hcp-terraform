@@ -1,0 +1,6 @@
+#!/bin/bash
+
+rosa logout
+rosa login
+rosa describe cluster --cluster ${ cluster_name } -o json
+rosa logout >/dev/null
